@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Integrada | Atendimento e Bem‑estar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+  <div class="brand">
+    <div class="logo" aria-hidden="true">
+      <span class="logo-mark">+</span>
+    </div>
+    <div class="brand-text">
+      <h1>Clínica Integrada</h1>
+      <p>Atendimento humano e cuidado completo para você e sua família</p>
+    </div>
+  </div>
+</header>
+
+    <main>
+        <p>Na Clínica Integrada, você encontra um atendimento acolhedor e objetivo. Unimos experiência clínica, equipe multidisciplinar e boas práticas para promover prevenção, diagnóstico e bem‑estar no dia a dia.</p>
+        <br>
+        <section><p>Nossos atendimentos:</p>
+            <br>
+        <div id="divServicos"></div>
+        </section>
+        <section class="depoimentos" id="depoimentos">
+  <div class="container">
+    <h2>O que nossos clientes dizem</h2>
+    <p class="sub">Depoimentos reais sobre acolhimento, cuidado e evolução.</p>
+
+    <div class="grid-depo">
+      <article class="depo-card">
+        <div class="depo-top">
+          <div class="avatar">A</div>
+          <div class="depo-meta">
+            <strong>Ana P.</strong>
+            <span>Atendimento online</span>
+          </div>
+        </div>
+
+        <p class="depo-text">
+          Me senti acolhida desde a primeira sessão. Em poucas semanas, já consegui
+          organizar melhor minha ansiedade e minha rotina.
+        </p>
+
+        <div class="depo-stars" aria-label="5 estrelas">
+          ★★★★★
+        </div>
+      </article>
+
+      <article class="depo-card">
+        <div class="depo-top">
+          <div class="avatar">M</div>
+          <div class="depo-meta">
+            <strong>Marcos R.</strong>
+            <span>Presencial</span>
+          </div>
+        </div>
+
+        <p class="depo-text">
+          O acompanhamento foi muito humano e objetivo. As sessões me ajudaram a
+          entender padrões e melhorar meu relacionamento.
+        </p>
+
+        <div class="depo-stars" aria-label="5 estrelas">
+          ★★★★★
+        </div>
+      </article>
+
+      <article class="depo-card">
+        <div class="depo-top">
+          <div class="avatar">L</div>
+          <div class="depo-meta">
+            <strong>Larissa S.</strong>
+            <span>Terapia infantil</span>
+          </div>
+        </div>
+
+        <p class="depo-text">
+          Minha filha evoluiu muito. A abordagem foi leve e respeitosa, e nós (pais)
+          também recebemos orientações valiosas.
+        </p>
+
+        <div class="depo-stars" aria-label="5 estrelas">
+          ★★★★★
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+        <section class="cta">
+  <h2>Agende seu atendimento</h2>
+  <p>Entre em contato para tirar dúvidas, ver horários e escolher o melhor atendimento.</p>
+  <button id="abrirModal" class="btn-cta">Entrar em contato</button>
+</section>
+
+        <section id="contato">
+        <div id="modalContato" class="modal">
+  <div class="modal-content">
+    <span id="fecharModal" class="close">&times;</span>
+
+    <h2>Contato</h2>
+    <form id="formContato" action="enviar.php" method="POST">
+      <label for="inputNome">Nome</label>
+      <input type="text" id="inputNome" name="nome" required>
+
+      <label>Assunto:</label>
+<input type="text" name="observacao" required placeholder="Ex: Consulta clínica, exames, vacinação...">
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</div>
+    </section>
+    </main>
+
+    <footer><br>© 2026 Clínica Integrada • Atendimento presencial e online</footer>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
