@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clínica Integrada | Atendimento e Bem‑estar</title>
+    <meta name="description" content="Clínica geral, exames, vacinação e especialidades com atendimento presencial e online. Agende pelo WhatsApp.">
+    <meta name="theme-color" content="#c21875">
+    <meta property="og:title" content="Clínica Integrada">
+    <meta property="og:description" content="Atendimento humano e cuidado completo para você e sua família.">
+    <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
   <div class="brand">
-    <div class="logo" aria-hidden="true">
-      <span class="logo-mark">+</span>
-    </div>
+    <img class="logo-img" src="logo.png" alt="Logo da Clínica Integrada" width="72" height="72">
     <div class="brand-text">
       <h1>Clínica Integrada</h1>
       <p>Atendimento humano e cuidado completo para você e sua família</p>
@@ -21,15 +24,13 @@
 
     <main>
         <p>Na Clínica Integrada, você encontra um atendimento acolhedor e objetivo. Unimos experiência clínica, equipe multidisciplinar e boas práticas para promover prevenção, diagnóstico e bem‑estar no dia a dia.</p>
-        <br>
-        <section><p>Nossos atendimentos:</p>
-            <br>
+        <section><h2>Nossos atendimentos</h2>
         <div id="divServicos"></div>
         </section>
         <section class="depoimentos" id="depoimentos">
   <div class="container">
     <h2>O que nossos clientes dizem</h2>
-    <p class="sub">Depoimentos reais sobre acolhimento, cuidado e evolução.</p>
+    <p class="sub">Exemplos ilustrativos sobre acolhimento e cuidado (conteúdo fictício de demonstração).</p>
 
     <div class="grid-depo">
       <article class="depo-card">
@@ -98,26 +99,27 @@
 </section>
 
         <section id="contato">
-        <div id="modalContato" class="modal">
+        <div id="modalContato" class="modal" role="dialog" aria-modal="true" aria-labelledby="tituloContato">
   <div class="modal-content">
-    <span id="fecharModal" class="close">&times;</span>
+    <button type="button" id="fecharModal" class="close" aria-label="Fechar">&times;</button>
 
-    <h2>Contato</h2>
-    <form id="formContato" action="enviar.php" method="POST">
+    <h2 id="tituloContato">Contato</h2>
+    <form id="formContato">
       <label for="inputNome">Nome</label>
       <input type="text" id="inputNome" name="nome" required>
 
-      <label>Assunto:</label>
-<input type="text" name="observacao" required placeholder="Ex: Consulta clínica, exames, vacinação...">
+      <label for="inputAssunto">Assunto</label>
+<input type="text" id="inputAssunto" name="observacao" required placeholder="Ex: Consulta clínica, exames, vacinação...">
 
-      <button type="submit">Enviar</button>
+      <button type="submit">Continuar no WhatsApp</button>
+      <p class="form-note">Você será redirecionado ao WhatsApp com a mensagem pronta.</p>
     </form>
   </div>
 </div>
     </section>
     </main>
 
-    <footer><br>© 2026 Clínica Integrada • Atendimento presencial e online</footer>
+    <footer>© 2026 Clínica Integrada • Atendimento presencial e online</footer>
     
     <script src="script.js" defer></script>
 </body>
