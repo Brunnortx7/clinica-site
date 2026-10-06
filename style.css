@@ -281,3 +281,29 @@ footer {
   .grid-depo{ grid-template-columns: 1fr; }
   #divServicos{ grid-template-columns: 1fr; }
 }
+main > p { margin-bottom: 28px; font-size: 1.05rem; }
+main > section > h2 { margin-bottom: 18px; }
+html { scroll-behavior: smooth; }
+
+:focus-visible { outline: 3px solid #c21875; outline-offset: 3px; }
+.service-card:focus-visible { border-radius: 16px; }
+
+button.close {
+    width: auto; margin: 0; padding: 4px 10px;
+    background: none; color: #555; font-size: 28px; line-height: 1;
+}
+button.close:hover { color: #c21875; opacity: 1; }
+.modal-content h2 { margin-bottom: 5px; }
+.form-note { margin-top: 12px; font-size: .85rem; color: #777; text-align: center; }
+input:focus { outline: 2px solid #c21875; border-color: transparent; }
+.btn-cta { border: none; cursor: pointer; width: auto; font-size: 1rem; }
+.btn-cta:hover { opacity: .9; transform: translateY(-2px); }
+.service-card.is-open { box-shadow: 0 14px 35px rgba(194,24,117,.18); }
+
+@media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; scroll-behavior: auto !important; }
+}
+
+.logo-img { width: 72px; height: 72px; border-radius: 50%; display: block; box-shadow: 0 4px 12px rgba(0,0,0,.2); }
+
+#divServicos { align-items: start; }
